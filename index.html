@@ -5,13 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adonisbs</title>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <style>
+        /**/
+        * {
+            box-sizing: border-box;
+        }
+        html, body { 
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Hind', sans-serif;
+            font-size: 16px;
+            line-height: 1.25;
+        }
+        body{
+            background: url("img/Desert.jpg") repeat fixed;
+        }
+        .container{
+            width: 100%;
+            max-width: 1024px;
+            margin: 0;
+        }
 
+        /* header */                        /*ESTUDAR CSS SELETORES*/
+        .container > header {
+            background: #888ccc;
+            display: flex;
+        }
+        .container > header img{
+            width: 4rem;
+            height: auto;
+            margin: .5rem 1rem .5rem .5rem;
+        }
+        .container > header a:nth-child(1){
+            background: red;
+            text-decoration: none;
+        }
+        .container > header a:nth-child(2){
+            background: blue;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > header h1 {
+            margin: 0;
+        }
+        .container > footer {
+            display: flex;
+            justify-content: space-between;
+            background: #2c3e50;
+            color: white;
+        }
+        .container > footer a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+        }
+        .container > footer a:hover{
+            background: red;
+        }
+        .container > footer div{
+            padding: 1rem;
+        }
+    </style>
+</head>
 <body>
     <a href="" name="topo" id="topo">
     <div class="container">
         <header>
-            <a href="index.html"><img src="C:\Users\36121742019.1\Desktop\Projetos_adonisbs\adonisbs.github.io\img\Koala.jpg" alt="Adonisbs" style="width:100px;height:100px;"></a>
+            <a href="index.html"><img src="img/Koala.jpg" alt="Adonisbs" ></a>
             <a href="index.html"><h1>Adonisbs</h1></a>
         </header>
         <nav>
@@ -32,7 +97,7 @@
                 <h2>Título ae</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum tristique egestas. Vivamus nec lacinia sapien, vitae vestibulum mauris. Suspendisse eget porta mauris. Phasellus tincidunt pharetra rhoncus. Etiam pretium consectetur neque a gravida. In ipsum ipsum, bibendum pellentesque gravida nec, iaculis id leo. Nam id ante tincidunt, imperdiet mauris in, placerat purus. Fusce non sem finibus, dapibus ipsum et, fermentum dolor. Pellentesque id viverra felis, ac malesuada erat. Aliquam quis sagittis turpis. Ut congue, nunc sit amet condimentum scelerisque, massa ipsum dignissim metus, sed vulputate purus felis a tellus. Phasellus vestibulum lacinia arcu et accumsan. Proin dui leo, ornare et scelerisque at, egestas eget lacus.</p>
                 <figure>
-                        <img src="C:\Users\36121742019.1\Desktop\Projetos_adonisbs\adonisbs.github.io\img\Penguins.jpg" alt="Imagem ae" style="height:300px;width:600px;">
+                        <img src="img/Penguins.jpg" alt="Imagem ae" style="height:100px;width:100px;">
                         <figcaption>Uma legenda ae.</figcaption>
                 </figure>
                 <p>Donec lacus magna, varius et vulputate eget, efficitur quis magna. Donec facilisis porta odio, vel vestibulum ipsum elementum quis. Quisque magna leo, porttitor lobortis auctor a, varius nec ex. In molestie dolor nunc, quis consequat mi mollis ac. Duis nec ultrices quam. Aenean et sapien diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas id feugiat libero. Donec finibus, mauris quis ultrices aliquam, erat ante tristique orci, at cursus nunc lorem sit amet arcu. Proin ultrices odio eu auctor vestibulum. Duis ultrices diam eu tellus mattis, scelerisque dignissim tellus pulvinar. Phasellus eget urna velit. Nam eget efficitur neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vitae dui sagittis, ornare magna at, consectetur tellus.</p>
@@ -41,8 +106,14 @@
             </section>
             <aside>
                 <div class="box">
-                <header>Título do Box.</header>
-                <main>Conteúdo do Box.</main>
+                    <header>Título do Box.</header>
+                    <main>Conteúdo do Box. Conteúdo do Box. Conteúdo do Box.</main>
+                    <footer>Rodapé do Box.</footer>
+                </div>
+                <div class="box">
+                    <header>Título do Box2.</header>
+                    <main>Conteúdo do Box2. Conteúdo do Box2. Conteúdo do Box2.</main>
+                    <footer>Rodapé do Box2.</footer>
                 </div>
             </aside>
         </main>
